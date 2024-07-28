@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body> 
+        <h1>Modifying HTML with JavaScript</h1> 
+    
+        <div onclick="myclick()" id="div"><p>JavaScript is powerful! It can manipulate HTML.</p></div> 
+    
+        <script type="text/javascript">
+            function myclick(){
+                var elementName = document.getElementById("div");  
+
+                if (elementName.style.fontStyle != "italic"){ 
+                elementName.style.fontStyle = "italic"; 
+                } 
+                else{ 
+                elementName.style.fontStyle = "normal"; 
+                } 
+            } 
+        </script> 
+    </body> 
+</html>
+
